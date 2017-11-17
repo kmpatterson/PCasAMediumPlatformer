@@ -3,11 +3,11 @@
                  table-layout: fixed;
                  border-spacing: 0;   }
 .background td { padding: 0;          }
-.lava          { background: rgb(255, 100, 100); }
-.wall          { background: white;   }
+.lava          { background: rgb(255, 19, 0); }
+.wall          { background: rgb(61, 42, 34);   }
 
 .actor  { position: absolute;  }
-.coin   { background: rgb(241, 229, 89); }
+.coin   { background: rgb(251, 185, 0); }
 .player { background: url('http://piq.codeus.net/static/media/userpics/piq_89887_400x400.png');       
 	      background-size: cover;      }
 .enemy  { background: url('https://thumbs.dreamstime.com/t/vector-pixel-art-tyrannoasaurus-dinosaur-93790566.jpg');

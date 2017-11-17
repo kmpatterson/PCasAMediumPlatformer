@@ -319,13 +319,13 @@ Coin.prototype.act = function(step) {
 };*/
 
 //Enemy actor movement
-var maxStep = 0.05;
-var wobbleSpeed = 8, wobbleDist = 0.07;
+var enemymaxStep = 0.05;
+var enemywobbleSpeed = 2, enemywobbleDist = 2.5;
 
 Enemy.prototype.act = function(step) {
-	this.wobble += step * wobbleSpeed;
-	var wobblePos = Math.sin(this.wobble) * wobbleDist;
-	this.pos = this.basePos.plus(new Vector (0, wobblePos));
+	this.wobble += step * enemywobbleSpeed;
+	var leftrightPos = (Math.sin(this.wobble) * enemywobbleDist) - enemywobbleDist;
+	this.pos = this.basePos.plus(new Vector (leftrightPos, 0));
 };
 
 var maxStep = 0.05;
